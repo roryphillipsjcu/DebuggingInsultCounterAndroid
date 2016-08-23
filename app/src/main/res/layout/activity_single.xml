@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="au.com.soaringemu.rorybugsapp.bugcounterapp.SingleActivity">
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Press if developer says they are stupid while bugfixing"
+            android:id="@+id/bugFixedButton" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" android:layout_alignParentEnd="true" android:onClick="bugButtonPress"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Count: 100"
+            android:id="@+id/countText" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:layout_above="@+id/bugFixedButton"
+            android:layout_alignParentRight="true" android:layout_alignParentEnd="true" android:textStyle="bold"
+            android:textAlignment="center" android:gravity="center_vertical" android:padding="100dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Developer Self-Insult Counter"
+            android:id="@+id/textView" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:layout_alignRight="@+id/countText"
+            android:layout_alignEnd="@+id/countText" android:layout_above="@+id/countText" android:gravity="bottom|center"/>
+</RelativeLayout>
